@@ -14,4 +14,5 @@
 | T-10 | Aplicar as correções da nova spec.md. Foi modificado a RN03, pois para um projeto de treino, envolvia complexidade demais. A antiga RN04 agora é a RN03. Remover qualquer resquicio da antiga RN03 no projeto. | Especificação | T-04 | Cobrir os testes |
 | T-11 | Eu adicionei uma ferramenta de cobertura de testes em plan.md, implemente essa ferramenta. | Planejamento | T-06 | Cobertura de testes em 100%|
 | T-12 | Construir um serviço para validar as senhas geradas, se elas seguem os padrões das regras de negócio e casos de borda. | Especificação | T-05 | Cobertura de testes em 100% e código compila sem warnings e erros|
+| T-13 | Em Planejamento, em decisões, adicionei uma linha para implementar o swagger para conseguir testar os endpoints no navegador | Planejamento | Swagger funcionando no navegador |
 

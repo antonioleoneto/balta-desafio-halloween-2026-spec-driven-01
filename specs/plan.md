@@ -13,6 +13,7 @@ Você é um engenheiro de software senior e está responsável pelo desenvolvime
 
 ## Decisões
 Todas as decisões para esse software estão presentes em /spec.md.
+- O Swagger deve ser implementado para testar os endpoints da API de forma mais simples e sem barreiras.
 
 ## Modelo de dados
 O tipo do banco de dados deve ser relacional
