@@ -1,6 +1,6 @@
-using GeradorSenhas.Api.Models;
+using GeradorSenhas.Api.Models.Domain;
 
-namespace GeradorSenhas.Api.Services;
+namespace GeradorSenhas.Api.Services.Interfaces;
 
 /*
  * Serviço de aplicação responsável por orquestrar a criação

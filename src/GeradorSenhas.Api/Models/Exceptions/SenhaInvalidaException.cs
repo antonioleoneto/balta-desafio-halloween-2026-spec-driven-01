@@ -1,4 +1,4 @@
-namespace GeradorSenhas.Api.Models;
+namespace GeradorSenhas.Api.Models.Exceptions;
 
 /*
  * Exceção de domínio lançada quando uma senha não pode ser criada.

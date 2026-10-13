@@ -1,4 +1,4 @@
-namespace GeradorSenhas.Api.Models;
+namespace GeradorSenhas.Api.Models.Interfaces;
 
 /*
  * Contrato do gerador de senhas. A geração é regra de negócio,

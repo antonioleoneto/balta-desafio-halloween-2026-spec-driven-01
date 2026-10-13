@@ -1,4 +1,6 @@
-namespace GeradorSenhas.Api.Models;
+using GeradorSenhas.Api.Models.Interfaces;
+
+namespace GeradorSenhas.Api.Models.Domain;
 
 /*
  * Implementação do gerador de senhas.

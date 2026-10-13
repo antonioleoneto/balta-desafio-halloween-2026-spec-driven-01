@@ -1,8 +1,10 @@
 using GeradorSenhas.Api.Data;
-using GeradorSenhas.Api.Models;
+using GeradorSenhas.Api.Models.Domain;
+using GeradorSenhas.Api.Models.Interfaces;
+using GeradorSenhas.Api.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace GeradorSenhas.Api.Services;
+namespace GeradorSenhas.Api.Services.Implementations;
 
 /*
  * Implementação do serviço de aplicação de senhas.

@@ -1,4 +1,4 @@
-namespace GeradorSenhas.Api.Models;
+namespace GeradorSenhas.Api.Models.Domain;
 
 /*
  * Entidade de domínio que representa uma senha gerada.

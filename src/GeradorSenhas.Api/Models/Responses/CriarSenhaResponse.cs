@@ -1,4 +1,4 @@
-namespace GeradorSenhas.Api.Models;
+namespace GeradorSenhas.Api.Models.Responses;
 
 /*
  * Resposta do endpoint de criação de senha.

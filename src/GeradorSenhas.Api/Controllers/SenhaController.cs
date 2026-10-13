@@ -1,5 +1,7 @@
-using GeradorSenhas.Api.Models;
-using GeradorSenhas.Api.Services;
+using GeradorSenhas.Api.Models.Domain;
+using GeradorSenhas.Api.Models.Exceptions;
+using GeradorSenhas.Api.Models.Responses;
+using GeradorSenhas.Api.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GeradorSenhas.Api.Controllers;

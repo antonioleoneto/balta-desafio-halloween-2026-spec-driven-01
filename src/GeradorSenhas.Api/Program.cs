@@ -1,6 +1,8 @@
 using GeradorSenhas.Api.Data;
-using GeradorSenhas.Api.Models;
-using GeradorSenhas.Api.Services;
+using GeradorSenhas.Api.Models.Domain;
+using GeradorSenhas.Api.Models.Interfaces;
+using GeradorSenhas.Api.Services.Implementations;
+using GeradorSenhas.Api.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 /*

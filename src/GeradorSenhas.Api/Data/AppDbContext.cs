@@ -1,4 +1,4 @@
-using GeradorSenhas.Api.Models;
+using GeradorSenhas.Api.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace GeradorSenhas.Api.Data;
