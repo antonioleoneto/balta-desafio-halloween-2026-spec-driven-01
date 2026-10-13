@@ -8,4 +8,12 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.13" />
   </ItemGroup>
 
+  <!--
+    Expõe membros internos ao projeto de testes, permitindo testar caminhos
+    de erro determinísticos sem alterar a API pública.
+  -->
+  <ItemGroup>
+    <InternalsVisibleTo Include="GeradorSenhas.Tests" />
+  </ItemGroup>
+
 </Project>

@@ -23,6 +23,23 @@ public class GeradorSenha : IGeradorSenha
 
     private readonly Lock _trava = new Lock();
     private readonly HashSet<string> _senhasGeradas = new HashSet<string>();
+    private readonly Func<int, int> _sortearIndice;
+
+    /*
+     * Cria o gerador usando um sorteio criptograficamente seguro.
+     */
+    public GeradorSenha() : this(RandomNumberGenerator.GetInt32)
+    {
+    }
+
+    /*
+     * Cria o gerador com uma função de sorteio que recebe o tamanho do alfabeto
+     * e devolve um índice. Usado pelos testes para tornar a geração determinística.
+     */
+    internal GeradorSenha(Func<int, int> sortearIndice)
+    {
+        _sortearIndice = sortearIndice;
+    }
 
     /*
      * Gera uma nova senha que atende às regras RN02 e RN03 e a registra
@@ -54,13 +71,13 @@ public class GeradorSenha : IGeradorSenha
      * Monta a senha sorteando TAMANHO_SENHA caracteres do alfabeto,
      * que não contém espaços em branco (RN03).
      */
-    private static string MontarCandidata()
+    private string MontarCandidata()
     {
         char[] senha = new char[TAMANHO_SENHA];
 
         for (int posicao = 0; posicao < TAMANHO_SENHA; posicao++)
         {
-            senha[posicao] = ALFABETO[RandomNumberGenerator.GetInt32(ALFABETO.Length)];
+            senha[posicao] = ALFABETO[_sortearIndice(ALFABETO.Length)];
         }
 
         return new string(senha);

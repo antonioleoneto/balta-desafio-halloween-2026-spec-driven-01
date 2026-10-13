@@ -4,7 +4,27 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
+  <!--
+    Cobertura de testes com Coverlet, justificado no plano técnico
+    (seção "Cobertura de testes"). Todo "dotnet test" coleta a cobertura
+    e falha se linhas, branches ou métodos ficarem abaixo de 100%.
+    O Program.cs é excluído por ser apenas a composição da aplicação
+    (injeção de dependência e pipeline HTTP), sem regra de negócio.
+  -->
+  <PropertyGroup>
+    <CollectCoverage>true</CollectCoverage>
+    <CoverletOutputFormat>cobertura</CoverletOutputFormat>
+    <Threshold>100</Threshold>
+    <ThresholdType>line,branch,method</ThresholdType>
+    <ThresholdStat>total</ThresholdStat>
+    <ExcludeByFile>**/Program.cs</ExcludeByFile>
+  </PropertyGroup>
+
   <ItemGroup>
+    <PackageReference Include="coverlet.msbuild" Version="10.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
     <PackageReference Include="xunit" Version="2.9.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.1.4" />

@@ -1,4 +1,5 @@
 using GeradorSenhas.Api.Models.Domain;
+using GeradorSenhas.Api.Models.Exceptions;
 
 namespace GeradorSenhas.Tests.Models;
 
@@ -81,6 +82,19 @@ public class GeradorSenhaTests
 
             Assert.False(senha.Any(char.IsWhiteSpace), $"A senha '{senha}' possui espaços em branco.");
         }
+    }
+
+    /*
+     * Quando nenhuma candidata atende às regras dentro do limite de tentativas,
+     * o gerador deve lançar SenhaInvalidaException. O sorteio fixo no índice 0
+     * produz sempre a mesma senha sem caracteres especiais, violando a RN03.
+     */
+    [Fact]
+    public void Gerar_SemCandidataValida_DeveLancarSenhaInvalidaException()
+    {
+        GeradorSenha geradorSenha = new GeradorSenha(tamanhoAlfabeto => 0);
+
+        Assert.Throws<SenhaInvalidaException>(() => geradorSenha.Gerar());
     }
 
     /*
