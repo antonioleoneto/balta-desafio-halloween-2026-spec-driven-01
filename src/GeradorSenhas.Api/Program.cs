@@ -1,3 +1,4 @@
+using GeradorSenhas.Api.Configurations;
 using GeradorSenhas.Api.Data;
 using GeradorSenhas.Api.Models.Domain;
 using GeradorSenhas.Api.Models.Interfaces;
@@ -14,6 +15,7 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddProblemDetails();
+builder.Services.AddSwagger();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("GeradorSenhas")));
@@ -31,6 +33,8 @@ using (IServiceScope scope = app.Services.CreateScope())
 
 app.UseExceptionHandler();
 app.UseStatusCodePages();
+
+app.UseSwaggerEmDesenvolvimento();
 
 app.UseHttpsRedirection();
 

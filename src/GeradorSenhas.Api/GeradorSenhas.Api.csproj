@@ -9,6 +9,16 @@
   </ItemGroup>
 
   <!--
+    Swashbuckle.AspNetCore: justificado no plano técnico
+    (seção Decisões: "O Swagger deve ser implementado para testar os endpoints
+    da API de forma mais simples e sem barreiras"). Gera o documento OpenAPI
+    e a interface Swagger UI para testar os endpoints no navegador.
+  -->
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.3.0" />
+  </ItemGroup>
+
+  <!--
     Expõe membros internos ao projeto de testes, permitindo testar caminhos
     de erro determinísticos sem alterar a API pública.
   -->
