@@ -19,8 +19,7 @@
 ## Regras de negócio
 - RN01: Todas as senhas criadas devem retornar um GUID de identificação;
 - RN02: Não deve ser gerado nenhuma senha igual;
-- RN03: As senhas do usuário não podem seguir um padrão de letras, numeros ou simbolos iguais, por exemplo, se um usuário tiver mais de uma senha, as duas senhas não devem se coincidir em qualquer sequencia de valores, ou seja, não deve ter nenhum valor sequencial, ou ter algum mesmo padrão que qualquer outra senha, por exemplo a senha 1 ser gy3PCre/?2S071-p e a senha 2 ser p-170S2?/erCP3yg.;
-- RN04: As senhas tem que ter caracteres especiais, 16 caracteres e não podem incluir espaços em branco.
+- RN03: As senhas tem que ter caracteres especiais, 16 caracteres e não podem incluir espaços em branco.
 
 ## Casos de borda
 - Não deve ser possível criar uma senha com menos de 16 caracteres;
