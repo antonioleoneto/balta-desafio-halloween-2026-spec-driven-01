@@ -8,6 +8,9 @@ Você é um engenheiro de software senior e está responsável pelo desenvolvime
 - Persistência em SQLite com EF Core
 - Testes com xUnit
 
+## Cobertura de testes
+- Coverlet
+
 ## Decisões
 Todas as decisões para esse software estão presentes em /spec.md.
 

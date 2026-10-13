@@ -12,4 +12,6 @@
 | T-08 | Aplicar as correções da nova spec.md. Foi modificado a RN03, pois estava muito vago o "padrão de letras, numeros ou simbolos iguais" e incrementei um exemplo. | Especificação | T-04 | Cobrir os testes |
 | T-09 | Aplicar as correções da nova spec.md. Foi modificado a RN03, pois o exemplo inserido tinha sequencia de caracteres. | Especificação | T-04 | Cobrir os testes |
 | T-10 | Aplicar as correções da nova spec.md. Foi modificado a RN03, pois para um projeto de treino, envolvia complexidade demais. A antiga RN04 agora é a RN03. Remover qualquer resquicio da antiga RN03 no projeto. | Especificação | T-04 | Cobrir os testes |
+| T-11 | Eu adicionei uma ferramenta de cobertura de testes em plan.md, implemente essa ferramenta. | Planejamento | T-06 | Cobertura de testes em 100%|
+| T-12 | Construir um serviço para validar as senhas geradas, se elas seguem os padrões das regras de negócio e casos de borda. | Especificação | T-05 | Cobertura de testes em 100% e código compila sem warnings e erros|
 
