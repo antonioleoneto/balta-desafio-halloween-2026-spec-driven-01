@@ -10,7 +10,6 @@
 - Nenhuma dependência nova entra sem justificativa escrita no plano
 - O Swagger deve ser implementado para testar os endpoints da API de forma mais simples e sem barreiras.
 
-
 ## Qualidade
 - O código deve compilar sem erros e warnings. 
 - Para cada regra de negócio, deve ser criado um teste unitário.
@@ -55,6 +54,7 @@
 - Convenções de comentários:
     - Comentários de blocos para fornecer descrições de arquivos, métodos, estruturas de dados e algoritmos.
 - Convenção de commits:
+    - O Claude Code não deve enviar o commit. Ele deve apenas escrever a mensagem do commit e eu envio.
     - Cada tarefa deve ser um commit e quando a tarefa for concluida, já deve vir a mensagem de commit com a seguinte convenção:
         - fix: para solução de problemas;
         - feat: para novas features;
@@ -63,3 +63,4 @@
         - build: para quando são realizadas modificações em arquivos de build e dependências.
         - test: para quando são construidos ou alterados arquivos de testes unitários.
         - chore: para atualizações de tarefas de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore.
+

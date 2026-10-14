@@ -17,4 +17,5 @@
 | T-13 | Em Planejamento, em decisões, adicionei uma linha para implementar o swagger para conseguir testar os endpoints no navegador | Planejamento | | Swagger funcionando no navegador |
 | T-14 | Em Planejamento, em decisões, adicionei uma linha para não subir os arquivos de build no github, adicione no .gitignore | Planejamento | | Sem arquivos de build como pendentes em arquivos mudados |
 | T-15 | Em Planejamento, eu acrescentei um novo tópico que é "Documentação", siga os passo a passos deste tópico para construir o readme.md do projeto. | Planejamento | | Arquivo Readme.md de /src pronto |
+| T-16 | Remover commit "docs: cria README do projeto conforme seção Documentação do plano (T-15)" gerado a partir do Claude. | Constitution | | Sem collab de commits em meu git hub |
 
