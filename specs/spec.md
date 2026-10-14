@@ -34,3 +34,4 @@
 ## Critérios de aceite
 - O usuário conseguir criar uma senha;
 - O usuário conseguir buscar uma senha a partir do GUID;
+- Os arquivos de build não podem subir no GitHub.

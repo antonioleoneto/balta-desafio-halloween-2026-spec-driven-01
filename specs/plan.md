@@ -13,8 +13,6 @@ Você é um engenheiro de software senior e está responsável pelo desenvolvime
 
 ## Decisões
 Todas as decisões para esse software estão presentes em /spec.md.
-- O Swagger deve ser implementado para testar os endpoints da API de forma mais simples e sem barreiras.
-- Os arquivos de build não podem subir no GitHub.
 
 ## Modelo de dados
 O tipo do banco de dados deve ser relacional
@@ -23,3 +21,12 @@ O tipo do banco de dados deve ser relacional
 A API deve ter apenas dois endpoints:
 1. /criar-senha
 2. /buscar-senha/{guid}
+
+## Documentação
+O arquivo README.md em /src do projeto deve obrigatoriamente seguir a seguinte estrutura para garantir a consistência e facilidade de onboarding:
+1. Título e Descrição: Resumo claro do propósito da aplicação.
+2. Pré-requisitos: Ferramentas necessárias para rodar a API.
+3. Instalação e Setup: Passo a passo para rodar o projeto localmente.
+4. Como Executar: Comandos para iniciar em modo desenvolvimento.
+5. Documentação da API (Swagger): Instruções de como acessar o Swagger UI localmente (ex: http://localhost:8080/docs) e onde encontrar o arquivo de spec.
+6. Scripts Disponíveis: Lista de comandos úteis (testes, linters, geração de código do spec).

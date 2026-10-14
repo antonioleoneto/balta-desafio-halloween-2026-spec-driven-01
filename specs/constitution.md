@@ -8,6 +8,8 @@
 - Endpoint não acessa banco diretamente, sempre via serviço de aplicação
 - Regra de negócio não vive no endpoint nem no handler HTTP
 - Nenhuma dependência nova entra sem justificativa escrita no plano
+- O Swagger deve ser implementado para testar os endpoints da API de forma mais simples e sem barreiras.
+
 
 ## Qualidade
 - O código deve compilar sem erros e warnings. 
